@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>2nd SWE General Meeting</h1>
+      </section>
+
+
+    <section class="slide">
+    <h3>Content</h3>
+
+   <li> What is SWE</li>
+     <li> -SWE Logo</li>
+    <li>Upcoming events</li>
+   <li>Volunteering Opportunities</li>
+     <li>Possible Future Events</li>
+    <li>How to Become a member</li>
+     </section>
+
+     <section class="slide">
+      <h2>What is SWE?</h2>
+      
+        
+          <h3>Society of Women Engineers</h3>
+          <p>Founded in 1950</p>
+          <p>Establishes engineering as a desirable career for Women</p>
+             <p>Empowers Women</p>
+        
+    </section>
+
+ <section class="slide">
+      <h2> The SWE Logo</h2>
+      <img src="http://www.swe.uc.edu/_pictures/_logos/swe_logo.jpg">
+   
+    </section>
+
+       <section class="slide">
+      <h2>Upcoming Events </h2>
+            <ol>
+         <li>
+         <h3>Data Driven Women: Demystifying Online Advertising</h3>
+         <p>Wednesday, September 25th, 6:00pm, Brightroll</p>
+        <li>
+          <h3>Engineering Bonfire</h3>
+          <p>Friday, September 26th, 5:00pm Ocean Beach</p>
+        </li>
+        <li>
+          <h3>SWE Golden Gate Section Potluck</h3>
+          <p>Saturday, September 27th, 11:00 AM, Crissy Field</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>WE14 Annual Conference</h2>
+      <iframe width="640" height="480" src="http://www.youtube.com/embed/b2dETymbsag" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+ <section class="slide">
+      <h2>ChickTech Volunteering</h2>
+          <p>What: Help High school girls get interested in tech careers!</p>
+          <p>When: October 11-12, 2014</p>
+          <p>Where: SFSU</p>
+          <p>Why: Gain leadership skills, make new connections, free lunch!</p>
+    </section>
+
+    <section class="slide">
+    <h2>Metro Academy of Engineer</h2>
+    <p>Become a mentor to a freshman in engineering</p>
+    <p>Make new connections!</p>
+    </section>
+
+      <section class="slide">
+      <h2>Future Events</h2>
+        <p>All dates TBD</p>
+       <p>1)Guest Speaker George Ploscker to talk about WIE</p>
+      
+       <p>2)Field Trip to Disney Interactive (up to 10) </p>
+
+       <p>3)Social Event: Going Bowling with IEEE</p>
+
+       <p>4)Fundraising</p>
+
+      </section>
+
+<section class ="slide">
+<h2>How to become a member</h2>
+<p>Go to swe.org</p>
+<p>Annual Fee of $20 </p>
+</section>
+
+      <section class="slide">
+      <h3>Recap</h3>
+      <p>SWE is great</p>
+      <p>Go to the events happening next week</p>
+      <p>Volunteer</p>
+      <p>Become a member or renew your fees!</p>
+      </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
